@@ -1,4 +1,4 @@
-.centered-div {
+.centered-div { 
   opacity: 0;
   animation: fadeInOut 5s ease-in-out forwards;
   display: inline-block;
@@ -25,9 +25,6 @@
   100% { color: #ff5733; } 
 }
 
-
-
-
 .golden-toolbar {
   --background: gold;
   color: #ffffff;
@@ -35,13 +32,74 @@
 }
 
 .square-title {
+  flex: 1;
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 6vw; 
   color: #ffffff;
   letter-spacing: 0.1em;
   text-align: center;
+  animation: rotate-title 3s linear infinite; /* Animación de rotación */
 }
 
+@keyframes slide-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.centered-title span {
+  display: inline-block;
+  animation: fade-in 3s infinite;
+}
+
+.centered-title span:nth-child(1) { animation-delay: 0s; }
+.centered-title span:nth-child(2) { animation-delay: 0.1s; }
+.centered-title span:nth-child(3) { animation-delay: 0.2s; }
+.centered-title span:nth-child(4) { animation-delay: 0.3s; }
+.centered-title span:nth-child(5) { animation-delay: 0.4s; }
+.centered-title span:nth-child(6) { animation-delay: 0.5s; }
+.centered-title span:nth-child(7) { animation-delay: 0.6s; }
+.centered-title span:nth-child(8) { animation-delay: 0.7s; }
+.centered-title span:nth-child(9) { animation-delay: 0.8s; }
+.centered-title span:nth-child(10) { animation-delay: 0.9s; }
+.centered-title span:nth-child(11) { animation-delay: 1s; }
+.centered-title span:nth-child(12) { animation-delay: 1.1s; }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.square-title {
+  display: inline-block;
+  animation: slide-right-loop 10s ease-in-out infinite; /* Cambia el tiempo según lo desees */
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 6vw;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+@keyframes slide-right-loop {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
 
 .game-card {
   width: 80%; 
@@ -60,6 +118,7 @@
   object-fit: cover; 
   transition: transform 0.3s ease; 
 }
+
 .card-content {
   position: absolute; 
   bottom: 10px; 
@@ -80,10 +139,6 @@
 .header-content {
   display: flex;
   align-items: center;
-}
-
-.square-title {
-  flex: 1;
 }
 
 .user-avatar {

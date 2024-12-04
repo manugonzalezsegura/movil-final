@@ -1,3 +1,4 @@
+
 <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
 
 <ion-header>
@@ -5,8 +6,7 @@
     <div class="header-content">
       <ion-title class="square-title">Busca a tu bro</ion-title>
       <div class="user-avatar" 
-           [ngStyle]="{ 'background-image': userImage ? 'url(' + userImage + ')' : '' }" 
-           >
+           [ngStyle]="{ 'background-image': userImage ? 'url(' + userImage + ')' : '' }">
       </div>
     </div>
   </ion-toolbar>
@@ -21,15 +21,14 @@
   </div>
 
   <div class="game-card" (click)="zoomImage()">
-    <img src="https://s.france24.com/media/display/1c5e9768-9b45-11e9-9e2d-005056a98db9/w:1280/p:16x9/a_corea_1_edit.jpg" alt="Descripción de la carta" class="card-image" />
+    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDNpY3E2N2ZwcTF2bm1jZmdlcXBtY3h5MWx1eTF0ZGRrZTg0OGQ0cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Y3fG04twT4Mgeps5oG/giphy.webp" alt="Descripción de la carta" class="card-image" />
     <p class="card-content">Busca a tu bro</p>
   </div>
   
   <div class="game-card" (click)="zoomImage()">
-    <img src="https://images.ecestaticos.com/Kw2Fa0ytGaiWRbysatNKpmRFmS4=/0x0:2121x1414/1200x675/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fad3%2Fb5e%2F95a%2Fad3b5e95a647ef05eb68de2da089fa34.jpg" alt="Descripción de la carta" class="card-image" />
+    <img src="https://c.tenor.com/qcYlFf9IyQ8AAAAd/tenor.gif" alt="Descripción de la carta" class="card-image" />
     <p class="card-content">Busca a tu bro</p>
   </div>
 </ion-content>
-
 
 <app-button-bar class="button-bar"></app-button-bar>

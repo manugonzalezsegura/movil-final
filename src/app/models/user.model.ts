@@ -4,8 +4,8 @@ export interface User {
     
     uid: string; 
     nombre:string;
-    radioAlcance: number; // Ejemplo: 10 metros
-    ubicacion?: { lat: number; lng: number };
+    radioAlcance?: number; // Ejemplo: 10 metros
+    ubicacion?: { lat: number; ln?: number };
     imageUrls?: string[];
 }
 

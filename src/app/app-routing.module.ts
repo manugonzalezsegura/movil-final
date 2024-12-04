@@ -5,11 +5,11 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('../app/pages/home/home.module').then( m => m.HomePageModule),
-    canActivate: [AuthGuard]
+    
   },
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'registro',
     pathMatch: 'full'
   },
   {
@@ -29,6 +29,10 @@ const routes: Routes = [
   {
     path: 'error',
     loadChildren: () => import('./pages/error404/error/error.module').then( m => m.ErrorPageModule)
+  },
+  {
+    path: 'registro',
+    loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule)
   },
 ];
 
