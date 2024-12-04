@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="full-screen">
+  <ion-img *ngIf="matchingImage" [src]="matchingImage" alt="Imagen de usuario coincidente" class="responsive-image"></ion-img>
+
+  <div *ngIf="matchingUser" class="info-overlay">
+    <h2>{{ matchingUser.name }}</h2>
+    <p>Gustos: {{ matchingUser.gustos.join(', ') }}</p>
+
+    <div class="icon-container">
+      <div class="icon-circle icon-red" (click)="rejectMatch()">
+        <img src="https://img.icons8.com/ios-filled/50/111057/x.png" alt="Icono de cerrar" />
+      </div>
+
+      <div class="icon-circle icon-green" (click)="redirectToHomeWithCoordinates()">
+        <img src="https://img.icons8.com/ios-filled/50/bjO3JOD9m8Sv/handshake.png" alt="Icono de handshake" />
+      </div>
+    </div>
+  </div>
+</ion-content>
+
