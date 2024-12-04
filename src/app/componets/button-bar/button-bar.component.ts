@@ -1,14 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {NavController,MenuController } from '@ionic/angular';
 
-@Component({
-  selector: 'app-root',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.scss'],
-})
-export class AppComponent {
-  
 
+
+@Component({
+  selector: 'app-button-bar',
+  templateUrl: './button-bar.component.html',
+  styleUrls: ['./button-bar.component.scss'],
+})
+export class ButtonBarComponent  implements OnInit {
   showLogin = false; 
   constructor(private navCtrl: NavController,private menuCtrl: MenuController) { }
 
@@ -26,12 +26,12 @@ export class AppComponent {
     this.navCtrl.navigateForward('/perfil');
   }
 
-  goToMapa() {
-    this.navCtrl.navigateForward('/mapa');
+  goToHome() {
+    this.navCtrl.navigateForward('/home');
   }
 
   goToMatch() {
-    this.navCtrl.navigateForward('/error');
+    this.navCtrl.navigateForward('/match');
   }
 
   goToMatchOtazo() {
@@ -39,16 +39,10 @@ export class AppComponent {
   }
 
   goToMatchHomeReal() {
-    this.navCtrl.navigateForward('/home-real');
+    this.navCtrl.navigateForward('/home');
   }
   openMoreMenu() {
     this.menuCtrl.open('more-menu'); // Abre el menú con el id "more-menu"
   }
-
-
-
-
-
-
 
 }

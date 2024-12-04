@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Error 404</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="error-container">
+    <ion-icon name="alert-circle-outline" class="error-icon"></ion-icon>
+    <h1>Página no encontrada</h1>
+    <p>Lo sentimos, la página que estás buscando aun no existe.</p>
+    <ion-button expand="block" color="primary" routerLink="/home">
+      Volver al Inicio
+    </ion-button>
+  </div>
+
+
+
+
+
+  <ion-item>
+    <ion-label position="floating">Correo Electrónico</ion-label>
+    <ion-input [(ngModel)]="email" type="email" required></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="recoverPassword()">Recuperar Contraseña</ion-button>
+  
+  <p *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</p>
+</ion-content>

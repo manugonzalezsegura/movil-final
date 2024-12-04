@@ -1,0 +1,44 @@
+<ion-app>
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+  
+  <ion-menu side="start" id="more-menu" content-id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Más opciones</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item (click)="goToMatchOtazo()">
+          <ion-icon slot="start" name="settings"></ion-icon>
+          <ion-label>Configuración</ion-label>
+        </ion-item>
+        <ion-item (click)="goToMatchHomeReal()">
+          <ion-icon slot="start" name="settings"></ion-icon>
+          <ion-label>Configuración</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-tab-bar slot="bottom">  
+    <ion-tab-button (click)="goToMatchHomeReal()">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button (click)="goToProfile()">
+      <ion-icon name="person-circle"></ion-icon>
+      <ion-label>Perfil</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button (click)="goToMatch()">
+      <ion-icon name="storefront"></ion-icon>
+      <ion-label>Match</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button (click)="openMoreMenu()">
+      <ion-icon name="ellipsis-horizontal"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-app>

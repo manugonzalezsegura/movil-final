@@ -1,0 +1,26 @@
+<ion-content [fullscreen]="true">
+  <div class="centered-div">
+    <h2 class="centered-title">Iniciar sesión</h2>
+    <form (submit)="login()">
+      <ion-item class="styled-item">
+        <ion-label position="floating">Gmail</ion-label>
+        <ion-input type="email" [(ngModel)]="email" name="email" required></ion-input>
+      </ion-item>
+
+      <ion-item class="styled-item">
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
+      </ion-item>
+      <p class="register-text">
+        ¿No tienes cuenta? <a (click)="navigateToRegister()">Regístrate aquí</a>
+      </p>
+      
+
+      <ion-button expand="block" type="submit">Iniciar sesión</ion-button>
+    </form>
+
+
+
+   
+  </div>
+</ion-content>

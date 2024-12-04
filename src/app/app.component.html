@@ -1,3 +1,19 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu side="end" menuId="more-menu" contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Más Opciones</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item (click)="goToMatchOtazo()">Gustos</ion-item>
+        <ion-item (click)="goToMapa()">Mapa De Bros</ion-item>
+        <ion-item (click)="goToMatch()">Coincidencias</ion-item>
+        <!-- Coincidencias talvez deveria eliminarlo ya que no lo uso o podriamos agregar otro link  -->
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="main-content"></ion-router-outlet>
 </ion-app>

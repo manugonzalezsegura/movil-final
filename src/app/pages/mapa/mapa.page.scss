@@ -1,0 +1,100 @@
+.map {
+    position: absolute; /* Asegúrate de que el mapa ocupe el espacio correcto */
+    top: 0; /* Empieza en la parte superior */
+    left: 0; /* Empieza a la izquierda */
+    height: 100%; /* Altura completa */
+    width: 100%; /* Ancho completo */
+    background-color: transparent; /* Fondo transparente */
+    opacity: 1; /* Haz visible el mapa */
+    transition: opacity 150ms ease-in; /* Transición para suavizar */
+  }
+  
+  .map.visible {
+    opacity: 1;
+  }
+  .blanco{
+    width: 50px;
+    height: 34434px;
+    height: auto;
+    background-color: white;
+  }
+  
+  
+  ion-tab-bar {
+    --background: #f8f8f8; /* Color de fondo de la barra de pestañas */
+    --color: #000; /* Color del texto de las pestañas */
+    --color-selected: #3880ff; /* Color de la pestaña seleccionada */
+    height: 10px; /* Altura de la barra de pestañas */
+  }
+  
+  ion-tab-button {
+    --padding: 0; /* Ajusta el padding si es necesario */
+    --icon-size: 24px; /* Tamaño del icono */
+    --label-font-size: 12px; /* Tamaño del texto */
+  }
+  
+  ion-icon {
+    font-size: 24px; /* Tamaño del icono */
+  }
+  
+  ion-label {
+    font-size: 12px; /* Tamaño del texto */
+  }
+  
+  
+  ion-tabs {
+    height: 170%; /* Asegúrate de que el contenedor ocupe el 100% del alto */
+  }
+  
+  ion-tab-bar {
+    position: fixed; /* Asegúrate de que la barra de pestañas esté fija en la parte inferior */
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .active {
+    color: red; /* O cualquier estilo que te ayude a verificar */
+  }  
+  :host {
+    background-color: black;
+    color: white; /* Cambia el color del texto a blanco */
+    display: block; /* Asegúrate de que el host ocupe todo el espacio necesario */
+    height: 100vh; /* Ajusta la altura para ocupar toda la vista si es necesario */
+  }
+  
+  
+  #container {
+    text-align: center;
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+  
+    color: #8c8c8c;
+  
+    margin: 0;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+  
+  .button-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegúrate de que el z-index sea alto para que esté por encima de otros elementos */
+  }

@@ -1,0 +1,48 @@
+
+.custom-content {
+    padding-bottom: 60px; /* Ajusta el valor para que no quede tan cerca del footer */
+  }
+  .upload-container {
+    text-align: center; /* Centrar el contenido */
+    margin-top: 10px; /* Espaciado superior */
+  }
+  
+  .upload-container img {
+    max-width: 100%; /* Asegúrate de que la imagen no se desborde */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 8px; /* Esquinas redondeadas (opcional) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra (opcional) */
+  }
+  .button-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegúrate de que el z-index sea alto para que esté por encima de otros elementos */
+  }
+  .profile-avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
+  
+
+  .user-info {
+    margin: 20px;
+  }
+  
+  .user-info p {
+    font-size: 16px;
+    color: #333;
+  }
